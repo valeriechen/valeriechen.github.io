@@ -65,6 +65,8 @@
 nav {
   background-color: #333;
   overflow: hidden;
+  margin: 20px auto;
+  width: fit-content;
 }
 
 nav ul {
