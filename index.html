@@ -1,61 +1,100 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Valerie Chen</title>
-  
-  <meta name="author" content="Valerie Chen">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
-
-  <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101241284);</script>
-  <script async src="//static.getclicky.com/js"></script>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valerie Chen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <!-- Top Banner with Navigation Links -->
+    <header class="banner">
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="full_pubs.html" class="nav-link">Publications</a>
+            <a href="teaching.html" class="nav-link">Teaching & Mentorship</a>
+            <a href="talks.html" class="nav-link">Service</a>
+        </nav>
+    </header>
 
-    <tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
+    <!-- Intro Section -->
+    <section id="intro" class="intro-container">
+        <div class="profile-photo">
+            <img src="images/headshot1.png" alt="Profile Picture">
+        </div>
+        <div class="intro-text">
+            <h1>Valerie Chen</h1>
+            <p>Carnegie Mellon University <br> Machine Learning Department</p>
+            <div class="social-icons">
+                <a href="https://scholar.google.com/citations?user=94yn2j0AAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                <a href="https://x.com/valeriechen_" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/valeriechen" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:valeriechen@cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
 
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <p style="text-align:center">
-                <name>Valerie Chen</name>
-              </p>
+    </section>
 
-          <img style="width:45%;max-width:45%" alt="profile photo" src="images/headshot1.png" class="center">
-
-          <tr>
-            <td>
-
+    <!-- Brief Intro Paragraph -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
         <p> I'm a final year <a href="https://www.ml.cmu.edu/"> Machine Learning</a> PhD student at Carnegie Mellon University advised by <a href="https://www.cs.cmu.edu/~atalwalk/"> Ameet Talwalkar</a>. I also spend time at <a href="https://www.all-hands.dev/">OpenHands</a> working with <a href="https://www.phontron.com/">Graham Neubig</a>.</p>
-        
 
-        <p><strong>I study human–AI interaction to develop agents that collaborate effectively with humans.</strong> I am particularly excited about applications of AI+SE and work closely with LMArena, JetBrains, and OpenHands. My work has been recognized by a NSF Graduate Research Fellowship, CMU Presidential Fellowship, and Rising Stars in Data Science.</p>
+        <p><strong>I develop AI co-workers that collaborate effectively with humans.</strong> My recent focus is on software engineering, in collaboration with LMArena, JetBrains, and OpenHands, and new work in mathematical and medical applications. In my research, I'm excited about:</p>
+
+        <ul class="research-points">
+        <li>
+          <em>
+            Developing algorithmic frameworks</em> that integrate state-of-the-art models and interactive agents into real-world collaborative settings
+            [<a href="https://arxiv.org/abs/2510.09801" class="paper-link">1</a>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33555" class="paper-link">2</a>, <a href="https://openreview.net/pdf?id=48Js-sP8wnv" class="paper-link">3</a>].
+          
+        </li>
+        <li>
+          <em>
+            Partnering with industry organizations</em> to study how these systems shape work practices 
+            and decision-making at scale
+            [<a href="https://openreview.net/pdf?id=9bYOqwtAud" class="paper-link">4</a>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30082" class="paper-link">5</a>, <a href="https://openreview.net/pdf/4add16809c3aba8bf141fdf5762eeec138c07070.pdf" class="paper-link">6</a>].
+          
+        </li>
+        <li>
+          <em>
+            Contributing behavioral insights into human–AI interactions</em> to inform the design 
+            of next-generation AI co-workers
+            [<a href=" https://dl.acm.org/doi/abs/10.1145/3610219" class="paper-link">7</a>, <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00685/124261" class="paper-link">8</a>, <a href="https://dl.acm.org/doi/full/10.1145/3706598.3714002" class="paper-link">9</a>].
+        </li>
+      </ul>
+
+
+       
+
+        <p>My work has been recognized by a NSF Graduate Research Fellowship, CMU Presidential Fellowship, and Rising Stars in Data Science.</p>
 
 
         <p>During my PhD, I was a visiting researcher at NYU with <a href="https://hhexiy.github.io/">He He</a> and intern at Microsoft Research with <a href="http://www.qveraliao.com/">Q. Vera Liao</a> and <a href="http://www.jennwv.com/">Jennifer Wortman Vaughan</a>. I completed my BS in Computer Science at Yale University.</p>
 
-        <div style="background-color:#f9f6e7; border:1px solid #e6c200; border-radius:4px; padding:11px; margin:20px auto; text-align:center; color:#7a5c00; font-weight:bold; width:40%;">
-          📢 On the academic job market (2025-26)! <br>
-          Please reach out if I might be a good fit. 📢
-        </div>
+    </section>
 
-        <!-- <p><b>New!</b> We recently launched Copilot Arena, a platform for code LLM evaluation in the wild! Download the extension in the <a href="https://marketplace.visualstudio.com/items?itemName=copilot-arena.copilot-arena&ssr=false#overview">VSCode Marketplace</a> + check out our <a href="https://github.com/lmarena/copilot-arena">github repository</a>, <a href="https://blog.lmarena.ai/blog/2024/copilot-arena">blog post</a>, and <a href="https://lmarena.ai/">live leaderboard</a>.</p> -->
+    <!-- News Section -->
+    <section id="news" class="section">
+        <h2>Recent News</h2>
+        <ul>
+            <li> 📢 I'm on the academic job market! Please reach out if I might be a good fit. 📢</li>
+            <li>Nov 2025: Gave guest lectures in 3 CMU classes about human-centered design of coding agents. <a href="https://docs.google.com/presentation/d/1mZcePXJ-cAjQ8PrWsseswbDa7tScSYAw/edit?usp=sharing&ouid=103824579810541476593&rtpof=true&sd=true">[slides]</a></li>
+            <li>Oct 2025: Selected as a top reviewer of NeurIPS 2025!</li>
+            <li>Sep 2025: Co-organized CMU NSF AI-SDM's workshop on Human-AI Complementarity <a href="https://www.cmu.edu/ai-sdm/research/human-ai-workshop/index.html">[link]</a></li>
+            <li>Jun 2025: Started my internship at OpenHands 🙌</li>
+            <li>May 2025: This summer I'll be presenting accepted work at CHI🇯🇵, FSE🇳🇴, and ICML🇨🇦.</li>
+          </ul> 
+    </section>
 
-              <p style="text-align:center">
-                <a href="mailto:valeriechen@cmu.edu">Email</a> /
-                <a href="https://scholar.google.com/citations?user=94yn2j0AAAAJ&hl=en">Google Scholar</a> / <a href="https://twitter.com/valeriechen_"> Twitter </a>
-              </p>
+    <!-- Recent Publications -->
+    <section id="recent-pub" class="section">
+        <h2>Selected Recent Publications</h2>
 
+        <p>See the full list of publications <a href="full_pubs.html" rel="noopener noreferrer">here</a>.</p>
 
-              <br>
-              <center><b>Selected Work</b> <br> See <a href="https://scholar.google.com/citations?user=94yn2j0AAAAJ&hl=en">here</a> for a full list. <br><br> </center>
-
-              <a href="http://arxiv.org/abs/2502.09328">Copilot Arena: A Platform for Code LLM Evaluation in the Wild</a>
+        <a href="http://arxiv.org/abs/2502.09328">Copilot Arena: A Platform for Code LLM Evaluation in the Wild</a>
               <br>
               Wayne Chi*, <strong>Valerie Chen*</strong>, Anastasios Nikolas Angelopoulos, Wei-Lin Chiang, Aditya Mittal, Naman Jain, Tianjun Zhang, Ion Stoica, Chris Donahue, Ameet Talwalkar
               <br>
@@ -82,85 +121,6 @@
               Hussein Mozannar*, <strong>Valerie Chen*</strong>, Mohammed Alsobay, Subhro Das, Sebastian Zhao, Dennis Wei, Manish Nagireddy, Prasanna Sattigeri, Ameet Talwalkar, David Sontag
               <br>
               <em>TMLR, 2025</em>
-              <br><br>
 
-              <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00685/124261/Do-LLMs-Exhibit-Human-like-Response-Biases-A-Case">Do LLMs exhibit human-like response biases? A case study in survey design</a>
-              <br>
-              Lindia Tjuatja*, <strong>Valerie Chen*</strong>,
-              Sherry Tongshuang Wu, Ameet Talwalkar, Graham Neubig
-              <br>
-              <em>TACL, 2024</em> 
-              <br><br>
-
-
-              <a href="https://dl.acm.org/doi/10.1145/3610219">Understanding the Role of Human Intuition on Reliance in Human-AI Decision-Making with Explanations</a>
-              <br>
-              <strong>Valerie Chen</strong>,
-              Q. Vera Liao, Jennifer Wortman Vaughan, Gagan Bansal
-              <br>
-              <em>CSCW, 2023</em>
-              <br><br>
-
-              <!-- <a href="https://www.cell.com/patterns/fulltext/S2666-3899(23)00131-9">Perspectives on Incorporating Expert Feedback into Model Updates</a>
-              <br>
-              <strong>Valerie Chen*</strong>,
-              Umang Bhatt*, Hoda Heidari, Adrian Weller, Ameet Talwalkar
-              <br>
-              <em>Patterns, 2023</em>
-              <br><br> -->
-
-
-              <a href="https://openreview.net/pdf?id=48Js-sP8wnv">Use-Case-Grounded Simulations for Explanation Evaluation</a>
-              <br>
-              <strong>Valerie Chen</strong>,
-              Nari Johnson, Nicholay Topin*, Gregory Plumb*, Ameet Talwalkar
-              <br>
-              <em>NeurIPS, 2022</em>
-              <br><br>
-
-              <a href="https://dl.acm.org/doi/10.1145/3511299">Interpretable Machine Learning: Moving From Mythos to Diagnostics</a>
-              <br>
-              <strong>Valerie Chen*</strong>,
-              Jeffrey Li*,
-              Joon Sik Kim**,
-              Gregory Plumb**,
-              Ameet Talwalkar
-              <br>
-              <em>Communications of ACM, 2022</em>
-              <br><br>
-
-
-            </td>
-          </tr>
-        </tbody></table>
-
-
-
-
-        <!-- <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <center><b>Important non-research things</b></center><br>
-              DEI Course at CMU (<a href="https://www.cs.cmu.edu/~15996/"> check out the course website </a>) 
-              <br><br>
-              Yale Women's Leadership Initiative (<a href="https://www.yalewli.org/">support remembering 50 at Yale here </a>)
-              <br><br>
-              SheCode at Yale (<a href="https://shecodeatyale.wordpress.com/"> org website</a>)
-              <br><br>
-              Computation and Society at Yale (<a href="https://computationsociety.yale.edu/"> yalies should get involved here </a>)
-              <br>
-            </td>
-          </tr>
-        </tbody></table>
-
-
-      </td>
-    </tr>
-
-
-  </table> -->
-
-
-</body>
-
-</html>
+    </section>
+    

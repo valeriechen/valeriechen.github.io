@@ -1,0 +1,283 @@
+/* =========================
+   CMU Modern Light Theme
+   ========================= */
+
+/* CMU Colors */
+:root {
+  --cmu-red: #a6192e;
+  --cmu-red-dark: #8e1627;
+  --cmu-gray-900: #1a1a1a;
+  --cmu-gray-700: #444;
+  --cmu-gray-500: #666;
+  --cmu-gray-300: #d6d9dc;
+  --cmu-gray-100: #f7f8f9;
+  --white: #ffffff;
+
+  --bg: #fafafa;
+  --text: var(--cmu-gray-900);
+  --muted: var(--cmu-gray-500);
+  --border: var(--cmu-gray-300);
+  --link: var(--cmu-red);
+  --link-hover: var(--cmu-red-dark);
+  --shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --container-w: 960px;
+  --gutter: 24px;
+}
+
+/* Base & Typography */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  max-width: var(--container-w);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  font-size: 16.5px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--text);
+  font-family: "Crimson Text", "Georgia", serif;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 2.4rem); font-weight: 700; }
+h2 { font-size: 1.6rem; font-weight: 600; border-bottom: 2px solid var(--border); padding-bottom: 6px; margin-bottom: 18px; }
+h3 { font-size: 1.3rem; font-weight: 600; color: var(--cmu-red-dark); }
+
+/* Links */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* --- Top Banner / Navigation (Flat with Underline) --- */
+.banner {
+  background: transparent;
+  padding: 30px 0 20px;
+  text-align: center;
+  border-bottom: 1.5px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  color: var(--cmu-gray-700);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--link);
+}
+
+.navbar .nav-link.active {
+  color: var(--link);
+  border-bottom: 2px solid var(--link);
+}
+
+
+/* --- Intro Section (Centered Layout) --- */
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  margin: 0 auto 60px;
+  max-width: 800px;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  border: 4px solid var(--white);
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  font-family: "Crimson Text", "Georgia", serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  color: var(--cmu-gray-900);
+  margin-bottom: 8px;
+}
+
+.intro-text p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.social-icons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.social-icons a {
+  color: var(--cmu-gray-500);
+  font-size: 1.3rem;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--link);
+}
+
+.school-info {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.school-info h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.school-info p {
+  font-size: 1rem;
+  color: var(--muted);
+  margin: 2px 0;
+}
+
+
+
+
+/* Section */
+.section {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  margin-bottom: 40px;
+}
+
+.section p {
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* Publications */
+.pub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+  padding: 20px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pub-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pub-item img {
+  width: 120px;
+  height: 90px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.pub-authors {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.pub-venue {
+  color: var(--link);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--link);
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn:hover {
+  background-color: var(--link-hover);
+  transform: translateY(-1px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 36px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .school-info { text-align: center; margin-top: 16px; }
+  .pub-item {
+    flex-direction: column;
+  }
+}
