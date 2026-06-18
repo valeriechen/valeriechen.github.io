@@ -1,32 +1,27 @@
-/* =========================
-   CMU Modern Light Theme
-   ========================= */
-
-/* CMU Colors */
 :root {
-  --cmu-red: #a6192e;
-  --cmu-red-dark: #8e1627;
-  --cmu-gray-900: #1a1a1a;
-  --cmu-gray-700: #444;
-  --cmu-gray-500: #666;
-  --cmu-gray-300: #d6d9dc;
-  --cmu-gray-100: #f7f8f9;
+  --gray-900: #1f2933;
+  --gray-700: #4b5563;
+  --gray-500: #6b7280;
+  --gray-300: #d8dee4;
+  --gray-100: #f6f7f8;
+  --blue: #2f5f8f;
+  --blue-dark: #1f4e79;
   --white: #ffffff;
 
   --bg: #fafafa;
-  --text: var(--cmu-gray-900);
-  --muted: var(--cmu-gray-500);
-  --border: var(--cmu-gray-300);
-  --link: var(--cmu-red);
-  --link-hover: var(--cmu-red-dark);
-  --shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  --text: var(--gray-900);
+  --muted: var(--gray-500);
+  --border: var(--gray-300);
+  --link: var(--blue);
+  --link-hover: var(--blue-dark);
+  --shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
 
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
 
-  --container-w: 960px;
-  --gutter: 24px;
+  --container-w: 840px;
+  --gutter: 20px;
 }
 
 /* Base & Typography */
@@ -41,8 +36,8 @@ body {
   padding: 0 var(--gutter);
   max-width: var(--container-w);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
-  line-height: 1.7;
-  font-size: 16.5px;
+  line-height: 1.55;
+  font-size: 14.5px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -55,9 +50,9 @@ h1, h2, h3 {
   margin: 0 0 12px;
 }
 
-h1 { font-size: clamp(2rem, 4vw, 2.4rem); font-weight: 700; }
-h2 { font-size: 1.6rem; font-weight: 600; border-bottom: 2px solid var(--border); padding-bottom: 6px; margin-bottom: 18px; }
-h3 { font-size: 1.3rem; font-weight: 600; color: var(--cmu-red-dark); }
+h1 { font-size: clamp(1.75rem, 4vw, 2.1rem); font-weight: 700; }
+h2 { font-size: 1.35rem; font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 14px; }
+h3 { font-size: 1.05rem; font-weight: 600; color: var(--gray-900); margin-top: 24px; }
 
 /* Links */
 a {
@@ -73,24 +68,24 @@ a:hover {
 /* --- Top Banner / Navigation (Flat with Underline) --- */
 .banner {
   background: transparent;
-  padding: 30px 0 20px;
+  padding: 22px 0 16px;
   text-align: center;
   border-bottom: 1.5px solid var(--border);
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
 .navbar .nav-link {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   letter-spacing: 0.02em;
-  color: var(--cmu-gray-700);
+  color: var(--gray-700);
   text-decoration: none;
   position: relative;
   padding-bottom: 4px;
@@ -113,14 +108,14 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 24px;
-  margin: 0 auto 60px;
+  gap: 18px;
+  margin: 32px auto 36px;
   max-width: 800px;
 }
 
 .profile-photo img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow);
@@ -134,27 +129,27 @@ a:hover {
 .intro-text h1 {
   font-family: "Crimson Text", "Georgia", serif;
   font-weight: 700;
-  font-size: clamp(1.8rem, 3vw, 2.2rem);
-  color: var(--cmu-gray-900);
+  font-size: clamp(1.65rem, 3vw, 2rem);
+  color: var(--gray-900);
   margin-bottom: 8px;
 }
 
 .intro-text p {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   color: var(--muted);
   margin-top: 0;
 }
 
 .social-icons {
-  margin-top: 16px;
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   gap: 14px;
 }
 
 .social-icons a {
-  color: var(--cmu-gray-500);
-  font-size: 1.3rem;
+  color: var(--gray-500);
+  font-size: 1.15rem;
   transition: color 0.2s ease;
 }
 
@@ -189,13 +184,124 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
-  padding: 24px 28px;
-  margin-bottom: 40px;
+  padding: 18px 22px;
+  margin-bottom: 26px;
 }
 
 .section p {
-  margin-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
   color: var(--text);
+}
+
+.section ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.section li {
+  margin-bottom: 4px;
+}
+
+.section li:last-child {
+  margin-bottom: 0;
+}
+
+.section .research-points {
+  margin-bottom: 12px;
+}
+
+.callout {
+  background: var(--gray-100);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--link);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  margin-top: 18px;
+  padding: 12px 14px;
+}
+
+.callout strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.publications-section h2 + .publication-group h3 {
+  margin-top: 0;
+}
+
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 2px 0 4px;
+}
+
+.publication-filter {
+  appearance: none;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--gray-700);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 7px 13px;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.publication-filter:hover {
+  border-color: var(--link);
+  color: var(--link);
+}
+
+.publication-filter:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.publication-filter.is-active {
+  background: var(--link);
+  border-color: var(--link);
+  color: var(--white);
+}
+
+.publication-filter-status {
+  color: var(--muted) !important;
+  font-size: 0.82rem;
+  min-height: 1.3em;
+  margin: 5px 0 0 !important;
+}
+
+.publication-group {
+  margin-top: 10px;
+}
+
+.publication-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.publication-list li {
+  line-height: 1.42;
+  margin-bottom: 8px;
+  padding-left: 2px;
+}
+
+.publication-list li[hidden] {
+  display: none;
+}
+
+.publication-group a {
+  font-weight: 600;
+}
+
+.award {
+  color: #2f6f4e;
+  font-weight: 700;
 }
 
 /* Publications */
